@@ -1,0 +1,448 @@
+* {
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  height: 10vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  place-items: center;
+  transition: all 0.5s;
+  z-index: 10;
+  position: sticky;
+}
+nav h1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-weight: 500px;
+  letter-spacing: 1.5px;
+  font-size: 1.4em;
+  align-items: center;
+  color: rgb(0, 162, 255);
+}
+nav #navlist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  align-items: center;
+}
+nav #navlist p {
+  transition: all 0.3s;
+}
+nav #navlist p:hover {
+  color: rgb(0, 162, 255);
+}
+
+#MainSection {
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  place-items: center;
+  transition: all 0.7s;
+}
+#MainSection #MainTitle {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainSection #MainTitle #title {
+  width: 60%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: verdana;
+}
+#MainSection #MainTitle #title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 0px;
+}
+#MainSection #MainTitle #title #line {
+  width: 0%;
+  height: 9px;
+  background-color: rgb(0, 162, 255);
+  border-radius: 40px;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: 9px;
+  transition: width 0.7s, box-shadow 0.5s ease 0.6s;
+}
+#MainSection #MainTitle #title:hover #line {
+  width: 70%;
+  box-shadow: 0 -5px 10px rgb(0, 162, 255), 0 -10px 30px rgb(0, 162, 255);
+}
+#MainSection #MainTitle #title p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#MainSection #MainForum {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainSection #MainForum #forumBox {
+  width: 96%;
+  height: 97%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+#MainSection #MainForum #forumBox h2 {
+  font-family: arial;
+  margin-bottom: 20px;
+}
+#MainSection #MainForum #forumBox input {
+  width: 70%;
+  height: 8%;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.315) inset;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: arial;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  background-color: rgb(207, 207, 207);
+  transition: all 0.5s;
+}
+#MainSection #MainForum #forumBox button {
+  height: 7%;
+  width: 50%;
+  background-color: rgb(0, 162, 255);
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 10px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: all 0.5s;
+}
+#MainSection #MainForum #forumBox button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+#MainSection #MainForum #borderColor {
+  width: 70%;
+  height: 80%;
+  background: linear-gradient(to left, rgb(0, 119, 255), cyan);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+}
+#MainSection #MainForum #DataUsageInput {
+  width: 96%;
+  height: 97%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+#MainSection #MainForum #DataUsageInput h2 {
+  text-align: center;
+  font-family: arial;
+}
+#MainSection #MainForum #DataUsageInput input {
+  width: 70%;
+  height: 8%;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.315) inset;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: arial;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: rgb(207, 207, 207);
+  transition: all 0.5s;
+}
+#MainSection #MainForum #DataUsageInput button {
+  height: 7%;
+  width: 50%;
+  background-color: rgb(0, 162, 255);
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 10px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: all 0.5s;
+}
+#MainSection #MainForum #DataUsageInput button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+#MainSection #MainForum #DataUsageInput span {
+  color: rgb(0, 162, 255);
+}
+
+#notifbox {
+  position: absolute;
+  width: 0vw;
+  height: 10vh;
+  border: 4px solid rgb(0, 162, 255);
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.9s;
+  z-index: 19;
+}
+#notifbox p {
+  font-family: verdana;
+  font-weight: bold;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#notifbox.muncul {
+  opacity: 1;
+  width: 30vw;
+  top: 80px;
+  z-index: 19;
+}
+#notifbox.muncul p {
+  opacity: 1;
+}
+
+#loadingbox {
+  width: 100vw;
+  height: 100vh;
+  color: rgb(0, 162, 255);
+  position: absolute;
+  background-color: white;
+  z-index: 12;
+  font-size: 2em;
+  font-family: verdana;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease 1s;
+  opacity: 1;
+}
+#loadingbox #loadbox {
+  width: 600px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#loadingbox #loadbox h2 {
+  margin-bottom: 15px;
+  opacity: 1;
+  transition: all 0.7s ease 1s;
+}
+#loadingbox #loadbox #lineload {
+  width: 0%;
+  height: 10px;
+  background-color: aqua;
+  border-radius: 30px;
+  opacity: 0;
+  transition: all 1s ease 1.5s;
+}
+#loadingbox #loadbox h3 {
+  margin-top: 5px;
+  opacity: 1;
+  transition: all 0.6s ease 1s;
+}
+
+#loadingbox.muncul {
+  opacity: 1;
+}
+#loadingbox.muncul #loadbox h2 {
+  opacity: 1;
+}
+#loadingbox.muncul #loadbox #lineload {
+  opacity: 1;
+  width: 80%;
+}
+#loadingbox.muncul #loadbox h3 {
+  opacity: 1;
+}
+
+#loadingbox.ilang {
+  opacity: 0;
+  display: none;
+}
+#loadingbox.ilang #loadbox h2 {
+  opacity: 0;
+}
+#loadingbox.ilang #loadbox h3 {
+  opacity: 0;
+}
+
+#historysec {
+  width: 100vw;
+  height: 90vh;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#historysec #tablebox {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to left, rgb(0, 119, 255), cyan);
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+#historysec #tablebox #table {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%;
+  place-items: center;
+  overflow: scroll;
+  scrollbar-width: none;
+  transition: all 0.5s;
+}
+#historysec #tablebox #table #kolomhead {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 2fr;
+  grid-template-rows: 100%;
+  place-items: center;
+  gap: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  color: rgb(36, 36, 36);
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid grey;
+}
+#historysec #tablebox #table #kolomhead h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-family: verdana;
+  z-index: 10;
+  color: rgb(0, 162, 255);
+  border-radius: 5px;
+  transition: box-shadow 0.5s ease 0.5s;
+}
+#historysec #tablebox #table #kolomhead .borderanim {
+  box-shadow: 0 5px 8px rgb(0, 153, 255);
+}
+#historysec #tablebox #table #kolomchild {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 5.5fr;
+  grid-auto-rows: 50px;
+  background-color: white;
+  transition: all 0.5s;
+}
+#historysec #tablebox #table #kolomchild .child {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 2fr;
+  grid-template-rows: 100%;
+  place-items: center;
+  border-bottom: 1px solid grey;
+}
+#historysec #tablebox #table #kolomchild .child h4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: arial;
+}
+#historysec #moneybox {
+  width: 15vw;
+  height: 5vh;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 174, 255);
+  left: 40px;
+  top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  color: rgb(0, 162, 255);
+  font-family: arial;
+}
+
+/*# sourceMappingURL=main.css.map */
